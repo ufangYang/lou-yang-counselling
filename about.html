@@ -442,7 +442,7 @@
                     <p>Evidence-based approach grounded in neuroscience research</p>
                 </div>
                 <div class="cred-item">
-                    <h3>Intercultural Mindfullness</h3>
+                    <h3>Intercultural Mindfulness</h3>
                     <p>Culturally sensitive practice for cross-cultural experiences</p>
                 </div>
                 <div class="cred-item">
@@ -474,7 +474,7 @@
 
     <!-- Footer -->
     <footer>
-        <span>&copy; 2026 Lou Yang Counselling</span>
+        <span>&copy; 2026 Fang Yang</span>
         <div class="footer-right">
             <a href="contact.html">Contact</a>
             <span>Berlin, Germany</span>
@@ -483,9 +483,31 @@
 
     <!-- Scripts -->
     <script>
-        // Mobile nav*        const navToggle = document.getElementById('navToggle');        const navLinks = document.getElementById('navLinks');        navToggle.addEventListener('click', () => {            navLinks.classList.toggle('open');        });        navLinks.querySelectorAll('a').forEach(link => {            link.addEventListener('click', () => navLinks.classList.remove('open'));        });
+        // Mobile nav
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+        });
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => navLinks.classList.remove('open'));
+        });
 
-        // Scroll fade-in        const observer = new IntersectionObserver((entries) => {            entries.forEach(entry => {                if (entry.isIntersecting) {                    entry.target.classList.add('visible');                }            });        }, { threshold: 0.12 });        document.querySelectorAll('.fade-in').forEach(el => {            observer.observe(el);            if (el.getBoundingClientRect().top < window.innerHeight) {                el.classList.add('visible');            }        });    </script>
+        // Scroll fade-in
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.12 });
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+            if (el.getBoundingClientRect().top < window.innerHeight) {
+                el.classList.add('visible');
+            }
+        });
+    </script>
 
 </body>
 </html>
