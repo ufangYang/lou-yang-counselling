@@ -16,8 +16,8 @@
         :root {
             --dark: #2C2C2C;
             --dark-soft: #4a4a4a;
-            --cream: #FAF8F5;
-            --cream-warm: #F3EFE8;
+            --cream: #F5F1EB;
+            --cream-warm: #EDE8DF;
             --sand: #E8E2D8;
             --sage: #D4CEC4;
             --white: #FFFFFF;
@@ -147,7 +147,7 @@
             background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=80');
             background-size: cover;
             background-position: center;
-            filter: brightness(0.65) saturate(0.9);
+            filter: brightness(0.5) saturate(0.9);
             z-index: 0;
         }
 
@@ -179,7 +179,7 @@
 
         /* ===== SECTION: DEEPER CHANGE ===== */
         .deeper {
-            background: var(--white);
+            background: var(--cream);
             color: var(--text);
             padding: 8rem 2rem;
             text-align: center;
@@ -280,20 +280,12 @@
 
         .service-card {
             text-align: center;
+            padding: 1.5rem 0;
+            border-top: 1px solid var(--sage);
         }
 
         .service-card img {
-            width: 100%;
-            aspect-ratio: 4/3;
-            object-fit: cover;
-            border-radius: 4px;
-            filter: saturate(0.85) brightness(0.95);
-            margin-bottom: 1.2rem;
-            transition: filter 0.4s;
-        }
-
-        .service-card:hover img {
-            filter: saturate(1) brightness(1);
+            display: none;
         }
 
         .service-card h3 {
@@ -325,7 +317,7 @@
 
         /* ===== SECTION: HOW IT WORKS ===== */
         .how-it-works {
-            background: var(--white);
+            background: var(--cream);
             color: var(--text);
             padding: 7rem 2rem;
             text-align: center;
@@ -534,7 +526,7 @@
 
         /* ===== SECTION: FAQ ===== */
         .faq-section {
-            background: var(--white);
+            background: var(--cream);
             padding: 7rem 2rem;
             display: flex;
             align-items: center;
@@ -628,7 +620,7 @@
             background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1600&q=80');
             background-size: cover;
             background-position: center;
-            filter: brightness(0.55) saturate(0.8);
+            filter: brightness(0.45) saturate(0.8);
             z-index: 0;
         }
 
@@ -767,6 +759,7 @@
             <div class="nav-row">
                 <a href="#faq">FAQ</a>
                 <a href="#contact">Contact</a>
+                <a href="https://substack.com/@fangyangphd" target="_blank">Blog</a>
             </div>
         </div>
         <a href="#home" class="nav-logo">Lou Yang Counselling</a>
@@ -799,8 +792,7 @@
     <section class="about-section" id="about">
         <div class="fade-in">
             <h2>About me.</h2>
-            <p>I hold a Master's in Psychology from the University of Bristol and a PhD from France, and have lived and worked in Taiwan, the UK, France, Belgium, and Germany. This multicultural journey shapes everything I do. Based in Berlin, I specialize in helping professionals with multicultural backgrounds navigate the emotional and behavioural challenges of living across environments.</p>
-            <p>With a background in cognitive neuroscience, my approach blends evidence-based CBT with insights from how the brain learns, adapts, and heals. Combined with intercultural awareness, this creates a space where your cultural background, your neurobiology, and your current reality are all honoured.</p>
+            <p>I have a Master's in Counselling Psychology from the University of Bristol and a PhD in Cognitive Neuroscience from Paris. Before working clinically, I spent years as a researcher studying emotion using brain imaging and eye-tracking, across Belgium, Taiwan, and Germany, and presenting that work internationally. That research background changes how I work. I'm not applying a model to your experience. I understand how emotion is processed, how the brain builds patterns, and how behaviour locks those patterns in place. When we work together, that's what we're actually working with. I've also lived this. Five countries, four languages, the particular discipline and failure that comes with building a life across cultures. I know what it costs, and I know what becomes possible when someone finally understands their own pattern clearly. No discrimination, no judgement. What happens in the room stays in the room.</p>
             <a href="about.html" style="display:inline-block;margin-top:1.8rem;font-size:0.95rem;font-weight:400;color:var(--text);text-decoration:none;border-bottom:1px solid var(--sage);padding-bottom:2px;transition:border-color 0.3s;">Learn more about me &rarr;</a>
             <div class="lang-bar" style="margin-top:1.5rem;">
                 <span>English</span>
@@ -818,34 +810,28 @@
             <p>Whether you're navigating burnout, cultural identity, or a major life transition, here's where we can start.</p>
             <div class="services-grid">
                 <div class="service-card fade-in">
-                    <img src="https://images.unsplash.com/photo-1541199249251-f713e6145474?w=600&q=80" alt="Burnout recovery">
-                    <h3>Burnout Recovery</h3>
-                    <p>For professionals running on empty. We work with the neuroscience of exhaustion to rebuild energy, boundaries, and a sustainable relationship with work.</p>
+                    <h3>Burnout</h3>
+                    <p>Especially in high-functioning professionals who understand their situation intellectually but can't stop the depletion.</p>
                 </div>
                 <div class="service-card fade-in">
-                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&q=80" alt="Career transitions">
                     <h3>Career Transitions</h3>
-                    <p>Navigating a new role, industry, or direction. We explore what's driving the shift and build clarity and confidence for what comes next.</p>
+                    <p>When you know what's rational but still can't move. We work with why.</p>
                 </div>
                 <div class="service-card fade-in">
-                    <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?w=600&q=80" alt="Multicultural identity">
                     <h3>Multicultural Identity</h3>
-                    <p>The emotional weight of carrying multiple cultures. We address identity, belonging, and the hidden grief of displacement that rarely gets named.</p>
+                    <p>The friction, the displacement grief, the exhaustion of performing belonging across worlds.</p>
                 </div>
                 <div class="service-card fade-in">
-                    <img src="https://images.unsplash.com/photo-1516585427167-9f4af9627e6c?w=600&q=80" alt="Attachment patterns">
                     <h3>Attachment &amp; Relationships</h3>
-                    <p>Understanding how early patterns shape your connections today. We work with attachment science to build healthier, more secure relationships.</p>
+                    <p>How early patterns run current behaviour below awareness.</p>
                 </div>
                 <div class="service-card fade-in">
-                    <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?w=600&q=80" alt="Trauma processing">
                     <h3>Trauma &amp; Resilience</h3>
-                    <p>Processing difficult experiences without being defined by them. A neuroscience-grounded approach to healing that respects your pace and your story.</p>
+                    <p>Processing experience through both the emotional and cognitive layers, not just one.</p>
                 </div>
                 <div class="service-card fade-in">
-                    <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=600&q=80" alt="Academic challenges">
-                    <h3>Academic Challenges</h3>
-                    <p>For students and researchers navigating imposter syndrome, perfectionism, or the pressure of international academia. We work with both the mind and the system.</p>
+                    <h3>Academic &amp; Professional Pressure</h3>
+                    <p>For researchers, academics, and international professionals who live inside high-performance systems.</p>
                 </div>
             </div>
         </div>
@@ -875,15 +861,34 @@
         </div>
     </section>
 
-    <!-- Split: Image left, text right -->
+    <!-- Split: Venn Diagram left, text right -->
     <section class="split">
         <div class="split-inner">
             <div class="fade-in">
-                <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80" alt="Professional woman in contemplation" class="split-image" onerror="this.outerHTML='<div class=\'split-image-placeholder\'>Your photo here</div>'">
+                <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" style="width: 100%; aspect-ratio: 1;">
+                    <!-- Background -->
+                    <rect width="300" height="300" fill="none"/>
+
+                    <!-- Top Circle: Brain -->
+                    <circle cx="150" cy="85" r="60" fill="#7B8C6E" opacity="0.25" stroke="#7B8C6E" stroke-width="1.5"/>
+
+                    <!-- Bottom-left Circle: Behaviour -->
+                    <circle cx="95" cy="165" r="60" fill="#D4CEC4" opacity="0.25" stroke="#D4CEC4" stroke-width="1.5"/>
+
+                    <!-- Bottom-right Circle: Emotion -->
+                    <circle cx="205" cy="165" r="60" fill="#E8E2D8" opacity="0.25" stroke="#E8E2D8" stroke-width="1.5"/>
+
+                    <!-- Labels -->
+                    <text x="150" y="70" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="16" font-weight="500" fill="#2C2C2C">Brain</text>
+
+                    <text x="75" y="180" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="16" font-weight="500" fill="#2C2C2C">Behaviour</text>
+
+                    <text x="225" y="180" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="16" font-weight="500" fill="#2C2C2C">Emotion</text>
+                </svg>
             </div>
             <div class="split-text fade-in">
-                <h2>Become who you were always meant to be.</h2>
-                <p>By understanding how we think, we can change how we behave. And by changing our behaviour, we learn from it and reshape the way we think. This is the cognitive cycle at the heart of CBT. Combined with neuroscience insights and intercultural awareness, we go beyond coping strategies to create lasting change. It's not about fixing you. It's about helping you find your way.</p>
+                <h2>Brain. Behaviour. Emotion.</h2>
+                <p>That's the triangle that holds. Brain is the why: cognition, pattern, neuroscience. Emotion is the what: felt experience, the body's signal. Behaviour is the how: what you actually do in the world. None of the three works alone, and most approaches only touch one or two. This is where we work differently.</p>
                 <a href="contact.html" class="btn-primary">Get in Touch</a>
             </div>
         </div>
@@ -956,6 +961,7 @@
         <span>&copy; 2026 Fang Yang</span>
         <div class="footer-right">
             <a href="contact.html">Contact</a>
+            <a href="https://substack.com/@fangyangphd" target="_blank">Blog</a>
             <span>Berlin, Germany</span>
         </div>
     </footer>
